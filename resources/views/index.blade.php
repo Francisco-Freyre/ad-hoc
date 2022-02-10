@@ -25,14 +25,14 @@
     <div class="modal-body row">
         <div class="col-md-6">
            <a href="/portafolio">
-               <img width="670" height="585" src="{{asset('storage/uploads/juridico.png')}}" alt="">
+               <img width="670" height="585" src="{{asset('storage/uploads/juridico.jpeg')}}" alt="">
             </a> 
             
         </div>
         
         <div class="col-md-6">
             <a href="/lanSystem">
-                <img width="670" height="585" src="{{asset('storage/uploads/system.png')}}" alt="">
+                <img width="670" height="585" src="{{asset('storage/uploads/system.jpeg')}}" alt="">
             </a>
             
         </div>

@@ -17,12 +17,12 @@
             padding-bottom: 6rem;
             text-align: center;
             color: rgb(255, 255, 255);
-            background-image: url('{{asset("storage/uploads/themis2.png")}}') ;
+            background-image: url('{{asset("storage/uploads/themisdiosa.jpeg")}}') ;
             background-repeat: no-repeat;
             background-attachment: scroll;
             background-position: center center;
             background-size: cover;
-            width: 1400px;
+            width: 1450px;
             height: 700px;
 
         }
@@ -142,7 +142,7 @@
                 <div class="col md-4">
                     <!-- Portfolio item 1-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1" data-titulo="{{$imagen->texto1}}">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1" data-texto="{{$imagen->descripcion1}}" data-titulo="{{$imagen->texto1}}" data-pic="{{$imagen->imagen1}}">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -298,10 +298,10 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase"></h2>
+                                    <h2 class="text-uppercase" id="titulo"></h2>
                                     <br>
-                                    <img class="img-fluid d-block mx-auto" src="{{asset('storage').'/'.$imagen->imagen1}}" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <img id="imagen" class="img-fluid d-block mx-auto" src="" alt="..." />
+                                    <p id="descripcion"></p>
                                    
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-times me-1"></i>
@@ -444,6 +444,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -453,5 +454,6 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
